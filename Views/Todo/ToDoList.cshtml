@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "To Do List";
+}
+
+<div class="container ">
+    <div id="listheader" class="listheader glow">To-Do List</div>
+    <table id="ListTable" clas="glass">
+        <thead id="tableheadersection" class="glass">
+            <tr class="tableheaderrow">
+                <td>Task No</td>
+                <td>Task Name</td>
+                <td>Description</td>
+                <td>Created Date</td>
+                <td>Actions</td>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+<br>
+<br>
+<button id="toCreatePage" class="button" onclick="document.location='/Todo/Create/'" style="float:left">Add Task</button>
+
+
+<script src="~/js/todolist.js"></script>

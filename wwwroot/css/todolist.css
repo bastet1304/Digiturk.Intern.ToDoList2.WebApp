@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.container {
+    width: fit-content;
+}
+
+.button {
+    --c: #98b2e6; /* the color*/
+
+    box-shadow: 0 0 0 .1em inset var(--c);
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: var(--_g) calc(var(--_p,0%) - 100%) 0%, var(--_g) calc(200% - var(--_p,0%)) 0%, var(--_g) calc(var(--_p,0%) - 100%) 100%, var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+    color: whitesmoke;
+    font-family: system-ui, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.1em 0.6em 0.1em 0.6em;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+}
+
+    .button:hover {
+        --_p: 100%;
+        transition: background-position .4s, background-size 0s;
+    }
+
+    .button:active {
+        box-shadow: 0 0 #f6cbcb inset #0009;
+        background-color: var(--c);
+        color: #fff;
+    }
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-image: url(https://images8.alphacoders.com/105/1054256.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+#listTable {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25%;
+    height: 80%;
+    border-radius: 20px;
+    overflow: hidden;
+    overflow: scroll;
+    /*background: linear-gradient( 135deg, rgba(0, 138, 251, 0.621), rgba(112, 150, 232, 0.07), rgba(51, 0, 255, 0) );
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.17);*/
+}
+table {
+    border-collapse: unset !important;
+}
+.glass {
+    background: linear-gradient(135deg, rgba(51, 0, 255, 0),rgba(112, 150, 232, 0.07), rgba(0, 138, 251, 0.621));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.17);
+}
+
+#AdditionArea {
+    border-collapse: collapse;
+    border-radius: 20px;
+    border: 1px solid #999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+#updatearea {
+    border-collapse: collapse;
+    border-radius: 20px;
+    border: 1px solid #999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.listheader {
+    text-align: center;
+    font-size: 75px;
+    text-decoration: wavy;
+    font-family: 'Bookman Old Style';
+    text-align: center;
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0047b3, 0 0 40px #0047b3, 0 0 50px #0047b3, 0 0 60px #0047b3, 0 0 70px #0047b3;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #3385ff, 0 0 40px #3385ff, 0 0 50px #3385ff, 0 0 60px #3385ff, 0 0 70px #3385ff, 0 0 80px #ff4da6;
+    }
+}
+
+table td {
+    border-collapse:collapse;
+    border-radius: 20px;
+}
+
+#tableheadersection {
+    
+    justify-content: space-between;
+    margin-bottom: 25px;
+    color: antiquewhite;
+    border-radius: 20px;
+}
+
+.tableheaderrow {
+    text-align: center;
+    color: whitesmoke;
+    
+}
+    .tableheaderrow td {
+        padding: 0.71em;
+    }
+.newaddedrow {
+    text-align: center;
+    border-radius: 20px;
+    color:whitesmoke;
+}
+
+.newaddedrow td input {
+    border: none;
+    border-radius: 20px;
+}
+

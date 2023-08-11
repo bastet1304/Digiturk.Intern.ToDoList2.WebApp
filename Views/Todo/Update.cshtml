@@ -1,0 +1,20 @@
+﻿@model Todo
+@{
+    ViewData["Title"] = "Update";
+}
+<input id="Id" type="hidden" value=" @Model.Id" />
+<table id="updatearea" class="glass">
+        <tr class="tableheaderrow">
+            <td>Task Name</td>
+            <td>Description</td>
+            <td>Actions</td>
+        </tr>
+        <tr>
+            <td><input style="border-radius:20px;" id="taskName" type="text" value="@Model.TaskName" /></td>
+            <td><input style="border-radius:20px;" id="description" type="text" value="@Model.Description" /></td>
+        <td><input type="button" value="Insert" id="insert" class="button" onclick="taskUpdate()" /></td>
+        </tr>
+    </>
+</table>
+
+<script src="~/js/update.js"></script>

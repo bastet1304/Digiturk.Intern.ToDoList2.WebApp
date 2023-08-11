@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Create";
+}
+<table id="AdditionArea" class="glass">
+        <tr class="tableheaderrow">
+            <td>Task Name</td>
+            <td>Description</td>
+            <td>Actions</td>
+        </tr>
+        <tr>
+            <td><input style="border-radius:20px;" id="taskName" type="text" /></td>
+            <td><input style="border-radius:20px;" id="description" type="text" /></td>
+            <td><input type="button" class="button" value="Insert" id="insert" onclick="onaddtask()" /></td>
+        </tr>
+    
+</table>
+<script src="~/js/createTodo.js"></script>
